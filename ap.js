@@ -431,14 +431,105 @@ console.log(finalOutput);*/
 
 // Returns the answer.
 // ans 
-         function addFunction(a,b){let sum = a + b;
-            return sum;
-         }
-         addFunction(4,2)
+        //  function addFunction(a,b){let sum = a + b;
+        //     return sum;
+        //  }
+        //  addFunction(4,2)
           
-         function divideFunction(a,b,c){addFunction(a,b);
-            let result = addFunction(a,b) / c;
-            result = Math.floor(result);
-            console.log(result)
-         }
-         divideFunction(8,2,3)
+        //  function divideFunction(a,b,c){addFunction(a,b);
+        //     let result = addFunction(a,b) / c;
+        //     result = Math.floor(result);
+        //     console.log(result)
+        //  }
+        //  divideFunction(8,2,3)
+        // ________________________________________________________________________________
+        // ques no 30
+        //  Multiply and Add
+// Write a function multiplyFunction(a, b) that returns the product of two numbers.
+
+// Write another function addThenMultiplyFunction(a, b, c) that:
+
+// Uses multiplyFunction(a, b)
+
+// Adds c to the product
+
+// Returns the final result.
+
+// Call addThenMultiplyFunction(2, 5, 3) and print the result.
+// ans 
+// function multiplyFunction(a,b){let product = a * b;
+//     return product;
+// }
+//  let b = multiplyFunction(2,3);
+
+// function addThenMultiplyFunction(a,b,c){multiplyFunction(a,b);
+//     let result = multiplyFunction(a,b) + c;
+//     console.log(result);
+// }
+// addThenMultiplyFunction(2,3,2)
+// ______________________________________________________________________________________
+// question 31
+// Divide and Subtract
+// 1️⃣ Write a function divideFunction(a, b) that returns a / b.
+// 2️⃣ Write a function subtractAfterDivide(a, b, c) that:
+
+// Uses divideFunction(a, b)
+
+// Subtracts c from the result
+
+// Returns the answer.
+// 3️⃣ Call subtractAfterDivide(20, 4, 2) and print the result.
+// ans 
+// function divideFunction(a,b){let divide = a / b;
+//     return divide;
+// }
+// divideFunction(8,4)
+
+// function subtractAfterDivide(a,b,c){divideFunction(a,b);
+//     let result = divideFunction(a,b) - c;
+//     console.log(result);
+// }
+// subtractAfterDivide(20,4,2);
+// _________________________________________________________________________
+// ques no 32
+// Sum Three Numbers Using Two Functions
+// 1️⃣ Write a function sumTwoNumbers(a, b) that returns the sum of two numbers.
+// 2️⃣ Write a function sumThreeNumbers(a, b, c) that:
+// Uses sumTwoNumbers(a, b) to get the partial sum
+// Adds c to that sum
+// Returns the final sum.
+// 3️⃣ Call sumThreeNumbers(2, 3, 4) and print the result.
+
+// ans 
+// function sumTwoNumbers(a,b){let sum = a + b;
+//     return sum;
+// }
+// sumTwoNumbers(2,3)
+
+// function sumThreeNumbers(a,b,c){sumTwoNumbers(a,b);
+//     let result = sumTwoNumbers(a,b) + c;
+//     console.log(result);
+// }
+// sumThreeNumbers(2,3,1)
+// ____________________________________________________________________________________
+// ques no 33
+// Double and Multiply
+// 1️⃣ Write a function doubleNumber(num) that returns double the number.
+// 2️⃣ Write a function multiplyAfterDouble(num, multiplyValue) that:
+
+// Uses doubleNumber(num)
+
+// Multiplies the doubled number by multiplyValue
+
+// Returns the result.
+// 3️⃣ Call multiplyAfterDouble(4, 3) and print the result.
+// ans 
+ function doubleNumber(num){let double = num + num;
+     return double; }
+ doubleNumber(5);
+
+function multiplyAfterDouble(num,multiplyValue){doubleNumber(num);
+     let result = doubleNumber(num) * multiplyValue;
+    console.log(result)
+ }
+ multiplyAfterDouble(2,3);
