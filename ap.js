@@ -209,10 +209,236 @@ console.log(finalOutput);*/
 // the array.
 // Example: [10, 20, 5, 30] → 30
 // ans 
-function maxNumber(arr){
-    for(var i = 0 ; i < arr.length; i++){let b = Math.max(...arr);
-        
-    }
-return b;}
+// Function to find the maximum number in an array
+// function maxNumber(arr) {
+//   // Assume the first element is the maximum
+//   let max = arr[0];
 
-console.log(maxNumber([1,4,55]));
+//   // Loop through the array starting from index 1
+//   for (let i = 1; i < arr.length; i++) {
+//     // If the current element is greater than max, update max
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+
+//   return max;
+// }
+// console.log(maxNumber([10, 20, 5, 30])); // Output: 30
+// console.log(maxNumber([-5, -2, -10, -1])); // Output: -1
+// console.log(maxNumber([100])); // Output: 100
+// --------------------------------------------------------------------------------------
+// ques no 18
+// Sum All Numbers in an Array
+// Write a function sumArray(arr) that returns the sum of all numbers in 
+// the array.
+// Example: [5, 10, 15] → 30
+// ans 
+// function sumArray(arr){let result =0;
+//     for(let i = 0; i < arr.length; i++){result = result + arr[i]
+//     }
+//     return result;
+// }
+// console.log(sumArray([2,3,4]));
+// _______________________________________________________________________________________
+// ques no 19
+//  Multiply All Numbers in an Array
+// Write a function multiplyArray(arr) that returns the product 
+// (multiplication result) of all numbers in the array.
+// Example: [2, 3, 4] → 24
+
+// ans 
+// function multiplyArray(arr){let product = 1;
+//     for(let i = 0; i < arr.length; i++){product = product * arr[i]}
+//     return product;
+// }
+// console.log(multiplyArray([2,3,4]))
+// ________________________________________________________________________________________
+// ques no 20
+// Check If All Numbers Are Positive
+// Write a function allPositive(arr) that returns true if all numbers in
+//  the array are positive, otherwise false.
+// Example: [1, 2, 3] → true
+// Example: [1, -2, 3] → false
+// ans 
+// function allPositive(arr){for(let i = 0 ; i < arr.length; i ++){if(arr[i]  > 0)
+// {console.log('all numbers are positive')}
+// else{console.log('all numbers are not positive')}
+// }}
+// allPositive([1,4,5]);
+// ______________________________________________________________________________________
+// ques no 21
+// a2-2ab + b2
+// ans function handleSquareRoot(num){return num * num;}
+
+     
+    //    function handleSquareRoot(num){return num * num;}
+
+    //   function handleEquation(a,b){
+    //  var eq = handleSquareRoot(a) - (2*a*b) + handleSquareRoot(b);
+    //  console.log(eq);
+    //  };
+    //  handleEquation(2,3)
+    // ____________________________________________________________________
+    // ques no 22
+    // Write two functions:
+
+// findSquare(num) — returns the square of a number.
+
+// findCube(num) — returns the cube of a number.
+
+// Then write another function calculateExpression(a, b) that computes:
+// a2 + 2ab + b3
+ 
+// and shows the result in the console.
+// ans 
+// function findSquare(num){return num * num;
+// }
+// function findCube(num){return num * num * num;}
+
+// function calculateExpression(a,b){var eq = findSquare(a) + (2 * a * b) + findCube(b);
+//     console.log(eq);
+// }
+// calculateExpression(2,3)
+// __________________________________________________________________________________________
+// ques no 23
+//  Difference of Squares
+// Write a function differenceOfSquares(x, y) that returns:
+// Use another helper function square(num) that returns num * num.
+// x2-y2
+// Call it with any two numbers and print the result.
+// ans 
+// function squareRoot(num){return num * num;}
+
+// function formulaFunction(x,y){let result = squareRoot(x) - squareRoot(y);
+//     console.log(result)
+// }
+// formulaFunction(3,2)
+// _______________________________________________________________________________________
+// ques no 24
+//  Average and Double
+// Write two functions:
+
+// findAverage(a, b) — returns the average of two numbers.
+
+// doubleValue(num) — returns double the number.
+
+// Then write a function processNumbers(x, y) that:
+
+// Finds the average of x and y
+
+// Doubles that average
+
+// Prints the result.
+// ans 
+// function doubleValue(num){return num+num;}
+
+// function processNumbers(x,y){let a = doubleValue(x);
+//     let b = doubleValue(y);
+//     console.log(a);
+//     console.log(b);
+//     let avg = a + b /2;
+//     console.log(avg)
+// }
+// processNumbers(2,3)
+// _______________________________________________________________________________________
+// ques no 25
+// Write two functions:
+// 1️⃣ greet(name) — takes a name as argument and prints "Hello, <name>!".
+// 2️⃣ introduce(name, age) — calls greet(name) inside it and then prints "You are <age> years old.".
+// Then call introduce("Ali", 25).
+// ans 
+// Function greet(name)
+// This function takes a name and prints a greeting
+// function greet(name) {
+//   console.log("Hello, " + name + "!");
+// }
+
+// // Function introduce(name, age)
+// // This function calls greet(name) and then prints age info
+// function introduce(name, age) {
+//   greet(name); // Call greet() inside introduce()
+//   console.log("You are " + age + " years old.");
+// }
+
+// // Call introduce() with example arguments
+// introduce("Ali", 25);
+// _______________________________________________________________________________
+// ques no 26
+// Add & Multiply
+// Question:
+// Write two functions:
+// add(a, b) — returns the sum of two numbers.
+// multiplySum(a, b, c) — calls add(a, b) and multiplies the result by c.
+//  Then print the final result.
+// Call multiplySum(2, 3, 4).
+// ans 
+// function add(a,b){let sum= a + b;
+//     return sum;
+// }
+// console.log(add(3,2));
+
+// function multiplySum(a,b,c){add(a,b);
+//     let total = add(a,b) * c;
+//     console.log(total)
+// }
+// multiplySum(2,3,4);
+// -----------------------------------------------------------------------------------
+// ques no 27
+// Say Hi & Full Welcome
+// Question:
+// Write two functions:
+// sayHi() — prints "Hi there!".
+// fullWelcome(name) — calls sayHi() and then prints "Welcome, <name>!".
+// Call fullWelcome("Sara").
+// ans 
+// function sayHi(){console.log('Hi there !')}
+// sayHi();
+
+// function fullWelcome(name){sayHi();
+//     console.log('welcome',name);
+// }
+// fullWelcome('Sara');
+// ________________________________________________________________________________________
+// ques no 28 ;
+// calculation 
+// ans
+//  function subtractFunction(a,b){let subtract = a - b;
+//     return subtract;
+    
+//  }
+//  subtractFunction(4,2);
+
+//  function multiplyFunction(a,b,c){subtractFunction(a,b);
+//     let multiply = subtractFunction(a,b) * c;
+//     return multiply;
+    
+//  }
+// let nn = multiplyFunction(5,3,8);
+
+// console.log(nn)
+// ________________________________________________________________________
+// ques no 29
+// :
+
+// Write a function addFunction(a, b) that returns the sum of two numbers.
+
+// Write another function divideFunction(a, b, c) that:
+
+// Uses addFunction(a, b)
+
+// Divides the result by c
+
+// Returns the answer.
+// ans 
+         function addFunction(a,b){let sum = a + b;
+            return sum;
+         }
+         addFunction(4,2)
+          
+         function divideFunction(a,b,c){addFunction(a,b);
+            let result = addFunction(a,b) / c;
+            result = Math.floor(result);
+            console.log(result)
+         }
+         divideFunction(8,2,3)
